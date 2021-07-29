@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{>header}}
+  </head>
+  <body>
+    {{>navbar}}
+    <div class="container-fluid main_menu">
+      <div class="col-md-10 col-12 mx-auto">
+          <form class="search_form">
+              <input type="text" class="search_field" id="cityName" placeholder="Enter your city name" autocomplete="off">
+              <button class="submit_btn" id="submitBtn">Search</button>
+          </form>
+          <div class="card">
+        <div class="card-component1">
+          <h1 class="temp"><span></span>&deg;C</h1>
+          <div id="status"></div>
+        </div>
+        <div class="card-component2">
+          <p class="location"><span></span>,</p>
+          <p class="country"><strong><span></span></strong></p>
+        </div>
+        <div class="card-component3">
+          <p class="mintemp">min: <span></span>&deg;C</p>
+          <p class="maxtemp">max: <span></span>&deg;C</p>
+        </div>
+        <div class="card-component4">
+          <p class="status">status: <span></span></p>
+        </div>
+      </div>
+        </div>
+    </div>
+    {{>footscript}}
+  </body>
+  {{>footer}}
+</html>

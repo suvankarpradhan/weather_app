@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{>header}}
+  </head>
+  <body>
+    {{>navbar}}
+    <div class="container-fluid main_menu">
+      <div class="col-md-10 col-12 mx-auto">
+          <div class="row">
+            <div class="col-md-6 col-12 main_header_right align-items-center">
+                <figure>
+                   <img src="images/avatar.jpg" class = "img-fluid" alt="img"> 
+                </figure>                
+            </div>
+            <div class="col-md-6 col-12 main_header_left">
+                {{>welcome_note}}
+                <h1>Hello, I am Suvankar Pradhan, A <span>MERN Stack </span>Web Developer.</h1>
+            </div>
+        </div>
+    </div>
+    {{>footscript}}
+  </body>
+  {{>footer}}
+</html>

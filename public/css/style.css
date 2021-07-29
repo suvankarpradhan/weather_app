@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Piazzolla:wght@200;300;400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500&family=Montserrat:wght@300&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Piazzolla", serif;
+}
+.main_menu {
+  margin-top: 3%;
+}
+.main_header_left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.welcome {
+  color: rgb(77, 88, 109);
+  font-weight: 300;
+  font-size: 1.3vw;
+}
+.main_header_left > h1 {
+  color: rgb(25, 27, 31);
+  font-weight: 400;
+  font-size: 2.5vw;
+}
+.main_header_left > h1 > span {
+  color: rgb(13, 184, 236);
+}
+.check_btn {
+  margin-top: 10%;
+  padding: 2.5% 5%;
+  font-size: 1.14vw;
+  font-weight: 300;
+  border-radius: 25vw;
+  border: 1px solid rgb(40, 104, 141);
+  box-shadow: 5px 10px 18px #888888;
+  width: 8vw;
+}
+button:hover {
+  outline: none;
+  transform: scale(1.01);
+}
+.bg_img {
+  height: 35vw;
+}
+.search_form {
+  margin: 5% 10%;
+  border-radius: 25vw;
+  height: 2.5vw;
+  border: 1px solid rgb(22, 190, 148);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 3%;
+}
+.search_field {
+  border: none;
+  width: 70%;
+  outline: none;
+  height: 2.25vw;
+  font-size: 1.25vw;
+}
+::placeholder {
+  color: rgb(68, 141, 141);
+}
+.submit_btn {
+  font-size: 1.14vw;
+  font-weight: 300;
+  border-radius: 25vw;
+  border: none;
+  background-color: rgb(22, 190, 148);
+  box-shadow: 4px 4px 17px -3px rgb(39 100 85);
+  color: #fff;
+  width: 8vw;
+  height: 2.6vw;
+}
+.card {
+  position: absolute;
+  left: 50%;
+  top: 8vw;
+  transform: translateX(-50%);
+  height: 18vw;
+  width: 32vw;
+  padding: 3%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 1vw;
+  box-shadow: 5px 10px 18px rgb(97, 121, 124);
+}
+.card > div {
+  padding: 3%;
+}
+.card-component1 {
+  grid-area: 1/1/2/2;
+  position: relative;
+}
+.fas {
+  position: absolute;
+  right: -90%;
+  bottom: -34%;
+  font-size: 5vw;
+  animation-name: zoom;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes zoom {
+  from {
+    font-size: 5vw;
+  }
+  to {
+    font-size: 5.5vw;
+  }
+}
+.fa-sun {
+  color: #fc9a1b;
+}
+.fa-cloud-rain {
+  color: rgb(183, 208, 255);
+}
+.fa-cloud {
+  color: #99caca;
+}
+.fa-cloud-sun {
+  color: rgb(236, 223, 144);
+}
+.temp {
+  font-family: "Baloo Chettan 2", cursive;
+  font-weight: 500;
+  font-size: 3.5vw;
+  color: #020705;
+}
+.location,
+.country,
+.mintemp,
+.maxtemp,
+.status {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1.14vw;
+  color: rgb(63, 62, 62);
+}
+.country {
+  color: black;
+}
+.card-component2 {
+  grid-area: 1/2/2/3;
+  display: flex;
+  flex-direction: row;
+  justify-self: right;
+}
+.card-component3 {
+  grid-area: 2/1/3/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-self: center;
+}
+.card-component4 {
+  grid-area: 2/2/3/3;
+  display: flex;
+  flex-direction: row;
+  justify-self: right;
+  align-items: flex-end;
+}
+footer {
+  text-align: center;
+  background-color: rgb(4, 28, 39);
+  color: #fff;
+  position: fixed;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+}
+/***********responsive**********/
+@media screen and (max-width: 480px) {
+  .navbar {
+    margin-bottom: 15%;
+  }
+  .welcome {
+    font-size: 3.9vw;
+    align-self: center;
+  }
+  .main_header_left {
+    align-items: center;
+  }
+  .main_header_left > h1 {
+    font-size: 6.5vw;
+    text-align: center;
+  }
+  .bg_img {
+    height: auto;
+  }
+  .check_btn {
+    font-size: 3.42vw;
+    width: 24vw;
+    height: 7vw;
+    margin-bottom: 20%;
+    box-shadow: 5px 10px 18px -3px #888888;
+  }
+  .search_form {
+    height: 8vw;
+    margin: 10% 6%;
+  }
+  .search_field {
+    height: 7.5vw;
+    font-size: 3vw;
+  }
+  .submit_btn {
+    font-size: 3.42vw;
+    height: 8vw;
+    width: 24vw;
+  }
+  .card {
+    top: 20vw;
+    height: 40vw;
+    width: 74vw;
+    padding: 4%;
+  }
+  .temp {
+    font-size: 9.15vw;
+  }
+  .location,
+  .country,
+  .mintemp,
+  .maxtemp,
+  .status {
+    font-size: 3.42vw;
+  }
+}
