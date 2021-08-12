@@ -6,6 +6,9 @@
   box-sizing: border-box;
   font-family: "Piazzolla", serif;
 }
+body {
+  padding-bottom: 10%;
+}
 .main_menu {
   margin-top: 3%;
 }
